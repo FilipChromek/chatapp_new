@@ -26,7 +26,7 @@ def home():
         #zoznam.append(text)
         #(flask.session)["text"]=zoznam
 
-        return flask.render_template(f"home.html",premenna=zoznam)
+        return flask.render_template(f"home_old.html",premenna=zoznam)
             
             
         
@@ -35,7 +35,7 @@ def home():
         (flask.session)["text"]=[]
 
         #print((flask.session)["text"])
-        return flask.render_template(f"home.html",premenna=())
+        return flask.render_template(f"home_old.html",premenna=())
 if __name__ == "__main__":
     #socketio.run(app, debug=True,port=1000)
     app.run("0.0.0.0",threaded=True,port=10000,debug=True)
