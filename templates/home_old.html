@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form method="post">
+        {% for i in premenna %}
+            <div>{{i}}</div>
+
+        {% endfor %}
+        
+        <input type="text" name="text"> 
+        <input type="submit" value="Poslat">
+    </form>
+</body>
+</html>
